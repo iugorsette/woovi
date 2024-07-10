@@ -1,0 +1,6 @@
+.teste{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    background-color: blue;
+}
