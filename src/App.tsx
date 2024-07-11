@@ -1,9 +1,13 @@
-import PaymentMethod from './components/PaymentMethod'
+import PaymentMethod from "./Pages/PaymentMethod"
+import PixCreditCard from "./Pages/PixCreditCard"
+
 
 function App() {
   return (
     <>
-      <PaymentMethod />
+      {/* <PaymentMethod /> */}
+      <PixCreditCard/>
+
     </>
   )
 }

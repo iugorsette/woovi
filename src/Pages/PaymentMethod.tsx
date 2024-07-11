@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Box, Container, Paper, Typography, Divider } from '@mui/material'
-import PaymentOptionsList from './PaymentOptionList'
-import { getPaymentOptions } from './../services/paymentService'
+
 import { PaymentOptionData } from '../types/payment'
-import Footer from './Footer'
+
+import { getPaymentOptions } from './../services/paymentService'
+
+import PaymentOptionsList from './../components/PaymentOptionList'
+import Footer from './../components/Footer'
 
 const PaymentMethod: React.FC = () => {
   const [options, setOptions] = useState<PaymentOptionData[]>([])
