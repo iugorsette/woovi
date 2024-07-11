@@ -1,13 +1,13 @@
-import PaymentMethod from "./Pages/PaymentMethod"
-import PixCreditCard from "./Pages/PixCreditCard"
-
+import CreditCard from './Pages/CreditCard'
+import PaymentMethod from './Pages/PaymentMethod'
+import Pix from './Pages/Pix'
 
 function App() {
   return (
     <>
-      {/* <PaymentMethod /> */}
-      <PixCreditCard/>
-
+      <PaymentMethod />
+      <Pix />
+      <CreditCard />
     </>
   )
 }

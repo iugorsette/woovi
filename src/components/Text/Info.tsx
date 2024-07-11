@@ -1,5 +1,4 @@
-import './Info.css'
-import { Typography } from '@mui/material'
+import { Box, Typography } from '@mui/material'
 import theme from '../../theme'
 import BoldText from './BoldText'
 
@@ -9,7 +8,17 @@ interface PropsInfo {
 
 export default function Info({ info }: PropsInfo) {
   return (
-    <div className="info">
+    <Box
+      sx={{
+        backgroundColor: theme.palette.info.main,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'end',
+        padding: '5px',
+        borderRadius: '4px',
+        height: '28px',
+      }}
+    >
       <Typography
         sx={{
           color: theme.palette.common.white,
@@ -18,7 +27,17 @@ export default function Info({ info }: PropsInfo) {
       >
         <BoldText text={info} />
       </Typography>
-      <div className="square"></div>
-    </div>
+      <Box
+        sx={{
+          backgroundColor: theme.palette.common.white,
+          width: '18px',
+          height: '18px',
+          rotate: '45deg',
+          position: 'relative',
+          left: '14px',
+          marginleft: '15px',
+        }}
+      ></Box>
+    </Box>
   )
 }

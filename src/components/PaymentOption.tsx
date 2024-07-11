@@ -36,14 +36,13 @@ const PaymentOption: React.FC<PaymentOptionProps> = ({
         ':last-child:first-child': {
           borderRadius: '8px',
         },
-
-        margin: 0,
-        padding: 1,
+        '&:not(:last-of-type)': selected ? {} : { borderBottom: 0 },
         border: selected
           ? `2px solid ${theme.palette.primary.main}`
           : `2px solid ${theme.palette.text.secondary}`,
-
-        width: 1,
+        margin: 0,
+        padding: 1,
+        gap: '2rem',
         justifyContent: 'space-between',
         alignItems: 'flex-start',
       }}

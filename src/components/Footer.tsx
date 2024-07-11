@@ -5,6 +5,7 @@ export default function Footer() {
   return (
     <Typography
       sx={{
+        marginTop: '1rem',
         color: theme.palette.grey[900],
         display: 'flex',
         alignItems: 'inherit',

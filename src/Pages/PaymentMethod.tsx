@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Box, Container, Paper, Typography, Divider } from '@mui/material'
+import { Box, Container, Paper } from '@mui/material'
 
 import { PaymentOptionData } from '../types/payment'
 
@@ -7,6 +7,7 @@ import { getPaymentOptions } from './../services/paymentService'
 
 import PaymentOptionsList from './../components/PaymentOptionList'
 import Footer from './../components/Footer'
+import Title from '../components/Text/Title'
 
 const PaymentMethod: React.FC = () => {
   const [options, setOptions] = useState<PaymentOptionData[]>([])
@@ -26,15 +27,12 @@ const PaymentMethod: React.FC = () => {
         <Box textAlign="center" mb={2}>
           <img src="./logo.svg" alt="Woovi Logo" style={{ width: '100px' }} />
         </Box>
-        <Typography sx={{ fontWeight: 'bold' }} variant="h6" align="center">
-          João, como você quer pagar?
-        </Typography>
+        <Title text="João, como você quer pagar?" />
         <PaymentOptionsList
           options={options}
           selectedOption={selectedOption}
           onOptionChange={handleOptionChange}
         />
-        <Divider sx={{ marginY: 2 }} />
         <Footer />
       </Paper>
     </Container>

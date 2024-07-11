@@ -34,6 +34,15 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: 'Nunito, Roboto, Arial, sans-serif',
+    h1: {
+      fontSize: 24, 
+    },
+    h2: {
+      fontSize: 20, 
+    },
+    h3: {
+      fontSize: 18, 
+    },
     subtitle1: {
       fontSize: 16, 
     },
@@ -42,8 +51,8 @@ const theme = createTheme({
     },
   },
   shape: {
-    borderRadius: 8, // Borda padrão
-  },
+    borderRadius: 8,
+  }
 
 });
 
